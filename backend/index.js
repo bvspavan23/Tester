@@ -20,7 +20,7 @@ app.use(cookieParser());
 
 // CORS Configuration
 const corsOptions = {
-  origin: ["https://tester-navy-three.vercel.app"], // Frontend origin
+  origin: ["https://tester-j17q.vercel.app"], // Frontend origin
   credentials: true,               // Allow cookies and credentials
 };
 app.use(cors(corsOptions));
