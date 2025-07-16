@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     if (!email) return toast.error("Please enter your email");
 
     try {
-      const res = await axios.post("https://tester-wy7c.onrender.com/user/forgot-password", {
+      const res = await axios.post("https://tester-wy7c.onrender.com/api/v1/user/forgot-password", {
         email,
       });
 
