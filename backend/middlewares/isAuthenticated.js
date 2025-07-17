@@ -12,8 +12,7 @@ const isAuthenticated = async (req, res, next) => {
         }
 
         // Optional: Log the token for debugging
-        console.log("Token from cookies:", token);
-
+        
         const decoded = jwt.verify(token, process.env.SECRET_KEY);
         req.id = decoded.userId;
         next();
